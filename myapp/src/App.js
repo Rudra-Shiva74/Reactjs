@@ -68,14 +68,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar title="AT" about="About" text={text} mode={Mode} setText={textColor} toggleMode={Theme} BgColor={BgColor} TextColor={TextColor} />
-
-        {/* <Effect /> */}
-
-
         {(Alert1[0] === "Success" || Alert1[0] === "Sorry") ? <Alert msg={Alert1} /> : <div style={{ height: '60px' }}></div>}
-
-
-
         <Routes>
           <Route exact path="/about" element={<About text={text} mode={Mode} setText={textColor} setbgColor={bgColor} />} />
           <Route exact path="/" element={<TextForm setAlert={setAlert} setText={textColor} heading="Rudra text manipulation website." text={text} mode={Mode} />} />
