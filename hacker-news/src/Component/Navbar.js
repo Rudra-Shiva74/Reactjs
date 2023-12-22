@@ -76,7 +76,7 @@ export default function Navbar() {
     const back = () => {
         setNews([]);
         setFlag(true);
-        document.title = `${"Home"} - Hacker News`;
+        document.title = `${query} - Hacker News`;
     }
     return (
         <div>
